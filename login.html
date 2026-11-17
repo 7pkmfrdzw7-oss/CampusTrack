@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="description" content="CampusTrack academic study planner website">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Login | CampusTrack</title>
+<link rel="stylesheet" type="text/css" href="assets/styles.css">
+
+
+</head>
+<body>
+<header class="site-header"><div class="container"><h1>CampusTrack</h1><p>Student Study Planner</p></div><nav><div class="container"><ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="planner.html">Study Planner</a></li>
+<li><a href="courses.html">Courses</a></li>
+<li><a href="about.html">About Us</a></li>
+<li><a href="login.html">Login</a></li>
+<li><a href="signup.html">Sign Up</a></li>
+<li><a href="#">More Pages</a><ul><li><a href="planner.html">Planner</a></li><li><a href="about.html">About Our Project</a></li></ul></li>
+</ul><div class="clear"></div></div></nav></header>
+<div class="container"><main>
+<section><h2>Login — Demonstration</h2><p>Fill in the example form to test JavaScript validation. This is not a real account system.</p>
+<form action="#" method="post" onsubmit="return validateLogin()">
+<fieldset><legend>Student Login</legend>
+<p><label for="login-email">Email:</label><input id="login-email" name="email" type="email" required></p>
+<p><label for="login-password">Password:</label><input id="login-password" name="password" type="password" required></p>
+<p><input type="submit" class="button" value="Login"> <input type="reset" value="Reset"></p>
+</fieldset></form><p class="feedback" id="login-message"></p>
+<p>New student? <a href="signup.html">Go to Sign Up</a>.</p>
+</section>
+<section class="map-section">
+<h2>Project Image Map</h2>
+<p>Click the image to visit the About Us page.</p>
+<img src="assets/study-banner.png" alt="CampusTrack project image linked to About Us" width="640" height="180" usemap="#projectmap">
+<map name="projectmap"><area shape="rect" coords="0,0,640,180" href="about.html" alt="Visit About Us"></map>
+</section>
+</main></div>
+<footer class="site-footer"><p>CampusTrack | CPIS 358 | Fall 2026</p><p>Static educational demonstration. Login and signup do not create accounts.</p></footer>
+<script type="text/javascript" src="assets/app.js"></script>
+</body>
+</html>

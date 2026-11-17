@@ -1,0 +1,52 @@
+/* CPIS-358: external CSS (CSS Part 1 and Part 2) */
+body { margin: 0; background-color: #f2f8fb; color: #203642; font-family: Arial, sans-serif; line-height: 1.6; }
+h1, h2, h3 { color: #115d70; }
+a { color: #116e89; }
+.site-header { background-color: #103e50; color: white; padding: 18px 0 0; box-shadow: 0 3px 10px #aec6cc; }
+.site-header h1 { color: white; margin: 0; font-size: 30px; text-shadow: 1px 1px 2px #163640; }
+.site-header p { color: #dbf2f6; margin: 0 0 15px; }
+.container { width: 88%; max-width: 1000px; margin: auto; }
+/* Menu built with lists, float and hover, as in CSS Part 1 */
+nav { background-color: #176b7e; }
+nav ul { margin: 0; padding: 0; list-style-type: none; }
+nav li { float: left; }
+nav a { display: block; padding: 12px 14px; color: white; text-decoration: none; }
+nav a:hover { background-color: #0d4d61; }
+nav li ul { display: none; position: absolute; background-color: #176b7e; z-index: 20; width: 190px; box-shadow: 2px 4px 9px #a2b4bd; }
+nav li:hover ul { display: block; }
+nav li ul li { float: none; }
+main { background: white; margin-top: 25px; margin-bottom: 25px; padding: 28px; border: 1px solid #d2e5ec; border-radius: 13px; box-shadow: 0 4px 12px #dbe7e9; }
+section { margin: 22px 0; }
+article { margin: 18px 0; padding: 15px; background: #f3fafc; border-left: 4px solid #2b94a6; border-radius: 5px; }
+.box { border: 1px solid #add2dc; border-radius: 10px; padding: 18px; background: #f2fbfd; margin: 12px 0; }
+.button { display: inline-block; background: #147b8d; color: white; padding: 9px 16px; border: none; border-radius: 6px; text-decoration: none; cursor: pointer; }
+.button:hover { background: #0d5162; }
+.small-button { background: #d9eff5; color: #174455; border: 1px solid #a7cfd8; padding: 6px 12px; cursor: pointer; }
+label { display: inline-block; width: 145px; margin: 7px 0; }
+input, select, textarea { padding: 7px; border: 1px solid #b4cdd4; border-radius: 4px; }
+input[type='checkbox'], input[type='radio'] { padding: 0; }
+fieldset { border: 1px solid #b9dce3; margin: 12px 0; border-radius: 8px; }
+legend { color: #14596e; font-weight: bold; }
+table { border-collapse: collapse; width: 100%; margin: 14px 0; }
+th, td { border: 1px solid #aacdd4; padding: 10px; text-align: left; }
+th { background-color: #d7edf3; }
+.notice { color: #6d4752; font-size: 13px; }
+.feedback { color: #156f4a; font-weight: bold; }
+.map-section { margin-top: 32px; border-top: 1px solid #d2e5ec; padding-top: 16px; }
+.map-section img { max-width: 100%; height: auto; border: 1px solid #a8cfdd; }
+/* Layering with position and z-index (CSS Part 1) */
+.layer-area { position: relative; height: 125px; margin: 15px 0; }
+.layer-back { position: absolute; left: 20px; top: 15px; width: 270px; height: 70px; background: #b2dce7; z-index: 1; border-radius: 10px; }
+.layer-front { position: absolute; left: 67px; top: 48px; width: 310px; padding: 15px; background: #f2fff7; border: 1px solid #7cbdac; z-index: 2; border-radius: 10px; box-shadow: 2px 4px 8px #b7ccd2; }
+.float-picture { float: right; width: 185px; background: #d5eef1; padding: 12px; margin: 0 0 12px 17px; border: 1px solid #9fcbd6; border-radius: 6px; text-align: center; }
+.clear { clear: both; }
+.site-footer { background: #103e50; color: #e5f5f8; padding: 18px; text-align: center; }
+/* Media query is included in CSS Part 1 */
+@media screen and (max-width: 700px) {
+  .container { width: 94%; }
+  main { padding: 15px; }
+  nav li { float: none; }
+  nav li ul { position: static; width: 100%; }
+  label { width: auto; display: block; }
+  .layer-front { width: 65%; }
+}

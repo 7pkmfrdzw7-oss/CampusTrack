@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="description" content="CampusTrack academic study planner website">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sign Up | CampusTrack</title>
+<link rel="stylesheet" type="text/css" href="assets/styles.css">
+
+
+</head>
+<body>
+<header class="site-header"><div class="container"><h1>CampusTrack</h1><p>Student Study Planner</p></div><nav><div class="container"><ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="planner.html">Study Planner</a></li>
+<li><a href="courses.html">Courses</a></li>
+<li><a href="about.html">About Us</a></li>
+<li><a href="login.html">Login</a></li>
+<li><a href="signup.html">Sign Up</a></li>
+<li><a href="#">More Pages</a><ul><li><a href="planner.html">Planner</a></li><li><a href="about.html">About Our Project</a></li></ul></li>
+</ul><div class="clear"></div></div></nav></header>
+<div class="container"><main>
+<section><h2>Sign Up — Demonstration</h2><p>This HTML form practices text, email, password, radio buttons, checkboxes and textarea inputs.</p>
+<form action="#" method="post" onsubmit="return validateSignup()">
+<fieldset><legend>Personal Information</legend>
+<p><label for="signup-name">Full Name:</label><input id="signup-name" name="fullname" type="text" required></p>
+<p><label for="signup-email">Email:</label><input id="signup-email" name="email" type="email" required></p>
+<p><label for="signup-password">Password:</label><input id="signup-password" name="password" type="password" required></p>
+<p><label for="signup-again">Confirm Password:</label><input id="signup-again" name="confirm" type="password" required></p>
+</fieldset>
+<fieldset><legend>Study Preferences</legend>
+<p>Preferred study time:
+<label for="morning" style="width:auto">Morning</label><input id="morning" type="radio" name="time" value="morning" checked>
+<label for="evening" style="width:auto">Evening</label><input id="evening" type="radio" name="time" value="evening"></p>
+<p><label for="updates" style="width:auto">I want study reminders (demo)</label> <input id="updates" type="checkbox" name="updates"></p>
+<p><label for="notes">Notes:</label><textarea id="notes" name="notes" rows="3" cols="32"></textarea></p>
+</fieldset>
+<p><input type="submit" class="button" value="Create Demo Account"> <input type="reset" value="Reset"></p>
+</form><p class="feedback" id="signup-message"></p>
+<p class="notice">No real accounts are created. Do not enter a real password.</p></section>
+<section class="map-section">
+<h2>Project Image Map</h2>
+<p>Click the image to visit the About Us page.</p>
+<img src="assets/study-banner.png" alt="CampusTrack project image linked to About Us" width="640" height="180" usemap="#projectmap">
+<map name="projectmap"><area shape="rect" coords="0,0,640,180" href="about.html" alt="Visit About Us"></map>
+</section>
+</main></div>
+<footer class="site-footer"><p>CampusTrack | CPIS 358 | Fall 2026</p><p>Static educational demonstration. Login and signup do not create accounts.</p></footer>
+<script type="text/javascript" src="assets/app.js"></script>
+</body>
+</html>

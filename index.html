@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="description" content="CampusTrack academic study planner website">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Home | CampusTrack</title>
+<link rel="stylesheet" type="text/css" href="assets/styles.css">
+<style type="text/css">
+/* Internal CSS (CSS Part 1) */
+#features article { border-left-color: #1d9b8f; }
+#top { background-color: #e8f6f8; padding: 16px; border-radius: 8px; }
+</style>
+<script type="text/javascript">
+/* Embedded JavaScript (JavaScript Part 1): function, DOM and onclick */
+function welcomeMessage() { document.getElementById('welcome-message').innerHTML = 'Welcome to the CampusTrack project!'; }
+</script>
+</head>
+<body>
+<header class="site-header"><div class="container"><h1>CampusTrack</h1><p>Student Study Planner</p></div><nav><div class="container"><ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="planner.html">Study Planner</a></li>
+<li><a href="courses.html">Courses</a></li>
+<li><a href="about.html">About Us</a></li>
+<li><a href="login.html">Login</a></li>
+<li><a href="signup.html">Sign Up</a></li>
+<li><a href="#">More Pages</a><ul><li><a href="planner.html">Planner</a></li><li><a href="about.html">About Our Project</a></li></ul></li>
+</ul><div class="clear"></div></div></nav></header>
+<div class="container"><main>
+<section id="top"><h2 style="color:#126c84">Welcome to CampusTrack</h2>
+<p>CampusTrack is a static educational website that helps students keep their study plans and course information in one place.</p>
+<a class="button" href="planner.html">Create a Study Task</a> <a class="small-button" href="#features">See Features</a>
+</section>
+<p id="welcome-message"></p><p><button type="button" class="small-button" onclick="welcomeMessage()">Welcome Message</button></p>
+<section id="features"><h2>What Can You Do?</h2>
+<article><h3>1. Study Planner</h3><p>Add a task with a course name and due date.</p></article>
+<article><h3>2. Course Information</h3><p>See a sample table of university study subjects.</p></article>
+<article><h3>3. Student Forms</h3><p>Try the demonstration Login and Sign Up forms.</p></article>
+</section>
+<section><h2>Why We Created This Website</h2>
+<p>Students may forget tasks and deadlines when they are written in different places. Our proposed solution is a simple website with linked pages and a task list.</p>
+<h3>Steps for a Better Routine</h3>
+<ol><li>Choose the course.</li><li>Write your next task.</li><li>Review your study list regularly.</li></ol>
+</section>
+<section><h2>Sample Plan</h2><table><caption>Three-step study schedule</caption>
+<thead><tr><th>Day</th><th>Topic</th><th>Activity</th></tr></thead>
+<tbody><tr><td>Sunday</td><td>HTML</td><td>Practice forms</td></tr>
+<tr><td>Monday</td><td>CSS</td><td>Practice layout</td></tr>
+<tr><td>Tuesday</td><td>JavaScript</td><td>Practice functions</td></tr></tbody></table></section>
+<section><h2>JavaScript Study Tip</h2><p id="study-tip">Click the button to display a study tip.</p><button class="button" type="button" onclick="showTip()">Show Tip</button></section>
+
+<section class="map-section">
+<h2>Project Image Map</h2>
+<p>Click the image to visit the About Us page.</p>
+<img src="assets/study-banner.png" alt="CampusTrack project image linked to About Us" width="640" height="180" usemap="#projectmap">
+<map name="projectmap"><area shape="rect" coords="0,0,640,180" href="about.html" alt="Visit About Us"></map>
+</section>
+</main></div>
+<footer class="site-footer"><p>CampusTrack | CPIS 358 | Fall 2026</p><p>Static educational demonstration. Login and signup do not create accounts.</p></footer>
+<script type="text/javascript" src="assets/app.js"></script>
+</body>
+</html>

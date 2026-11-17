@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="description" content="CampusTrack academic study planner website">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Study Planner | CampusTrack</title>
+<link rel="stylesheet" type="text/css" href="assets/styles.css">
+
+
+</head>
+<body>
+<header class="site-header"><div class="container"><h1>CampusTrack</h1><p>Student Study Planner</p></div><nav><div class="container"><ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="planner.html">Study Planner</a></li>
+<li><a href="courses.html">Courses</a></li>
+<li><a href="about.html">About Us</a></li>
+<li><a href="login.html">Login</a></li>
+<li><a href="signup.html">Sign Up</a></li>
+<li><a href="#">More Pages</a><ul><li><a href="planner.html">Planner</a></li><li><a href="about.html">About Our Project</a></li></ul></li>
+</ul><div class="clear"></div></div></nav></header>
+<div class="container"><main>
+<section><h2>Study Planner</h2>
+<p>This page uses an HTML form and external JavaScript to add tasks to the list.</p>
+<form id="task-form" action="#" method="get" onsubmit="return addTask()">
+<fieldset><legend>New Task</legend>
+<p><label for="task-name">Task name:</label><input type="text" id="task-name" name="task-name" maxlength="80" required></p>
+<p><label for="task-course">Course:</label><select id="task-course" name="task-course"><option>HTML</option><option>CSS</option><option>JavaScript</option></select></p>
+<p><label for="task-date">Due date:</label><input type="date" id="task-date" name="task-date"></p>
+<p><input type="submit" value="Add Task" class="button"> <input type="reset" value="Reset"></p>
+</fieldset></form>
+<p class="feedback" id="task-message"></p>
+<section><h3>My Tasks (<span id="task-count">0</span>)</h3>
+<ul id="task-list"><!-- JavaScript adds list items here. --></ul>
+<button type="button" class="small-button" onclick="clearTasks()">Clear All Tasks</button>
+<p class="notice">Demo: tasks exist only while this page remains open. They are not saved to a server or browser storage.</p>
+</section></section>
+<section class="map-section">
+<h2>Project Image Map</h2>
+<p>Click the image to visit the About Us page.</p>
+<img src="assets/study-banner.png" alt="CampusTrack project image linked to About Us" width="640" height="180" usemap="#projectmap">
+<map name="projectmap"><area shape="rect" coords="0,0,640,180" href="about.html" alt="Visit About Us"></map>
+</section>
+</main></div>
+<footer class="site-footer"><p>CampusTrack | CPIS 358 | Fall 2026</p><p>Static educational demonstration. Login and signup do not create accounts.</p></footer>
+<script type="text/javascript" src="assets/app.js"></script>
+</body>
+</html>
