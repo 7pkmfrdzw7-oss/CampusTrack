@@ -21,12 +21,12 @@
 </ul><div class="clear"></div></div></nav></header>
 <div class="container"><main>
 <section><h2>Sign Up — Demonstration</h2><p>This HTML form practices text, email, password, radio buttons, checkboxes and textarea inputs.</p>
-<form action="#" method="post" onsubmit="return validateSignup()">
+<form action="#" method="post" onsubmit="return validateSignup()" novalidate>
 <fieldset><legend>Personal Information</legend>
-<p><label for="signup-name">Full Name:</label><input id="signup-name" name="fullname" type="text" required></p>
-<p><label for="signup-email">Email:</label><input id="signup-email" name="email" type="email" required></p>
-<p><label for="signup-password">Password:</label><input id="signup-password" name="password" type="password" required></p>
-<p><label for="signup-again">Confirm Password:</label><input id="signup-again" name="confirm" type="password" required></p>
+<p><label for="signup-name">Full Name:</label><input id="signup-name" name="fullname" type="text"></p>
+<p><label for="signup-email">Email:</label><input id="signup-email" name="email" type="email" onblur="checkSignupEmail()"></p>
+<p><label for="signup-password">Password:</label><input id="signup-password" name="password" type="password"></p>
+<p><label for="signup-again">Confirm Password:</label><input id="signup-again" name="confirm" type="password"></p>
 </fieldset>
 <fieldset><legend>Study Preferences</legend>
 <p>Preferred study time:

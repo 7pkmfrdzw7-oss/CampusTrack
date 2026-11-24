@@ -32,6 +32,14 @@ function welcomeMessage() { document.getElementById('welcome-message').innerHTML
 <a class="button" href="planner.html">Create a Study Task</a> <a class="small-button" href="#features">See Features</a>
 </section>
 <p id="welcome-message"></p><p><button type="button" class="small-button" onclick="welcomeMessage()">Welcome Message</button></p>
+<section class="dynamic-panel" id="dynamic-demo">
+<h2 id="dynamic-heading">Dynamic Picture &amp; Text</h2>
+<p id="dynamic-description">JavaScript can change a picture, its text, and its CSS style.</p>
+<img id="dynamic-picture" class="dynamic-picture" src="assets/study-banner.png" width="640" height="180" alt="CampusTrack introductory study banner">
+<p><button type="button" class="button" onclick="changeStudyPicture()">Show Today's Study Plan</button>
+<button type="button" class="small-button" onclick="resetStudyPicture()">Show Original Picture</button></p>
+<p class="notice">JavaScript Part 3: getElementById, src, innerHTML, style and click event.</p>
+</section>
 <section id="features"><h2>What Can You Do?</h2>
 <article><h3>1. Study Planner</h3><p>Add a task with a course name and due date.</p></article>
 <article><h3>2. Course Information</h3><p>See a sample table of university study subjects.</p></article>

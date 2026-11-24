@@ -35,6 +35,14 @@
 <button type="button" class="small-button" onclick="clearTasks()">Clear All Tasks</button>
 <p class="notice">Demo: tasks exist only while this page remains open. They are not saved to a server or browser storage.</p>
 </section></section>
+<section class="dynamic-panel">
+<h2>Dynamic Study Topics</h2>
+<p>Click to generate a small practice checklist using a JavaScript for loop.</p>
+<button type="button" class="small-button" onclick="generateTopics()">Generate Topics</button>
+<button type="button" class="small-button" onclick="clearTopics()">Clear Topics</button>
+<ol id="topic-list"></ol>
+<p class="feedback" id="topic-message"></p>
+</section>
 <section class="map-section">
 <h2>Project Image Map</h2>
 <p>Click the image to visit the About Us page.</p>

@@ -21,10 +21,10 @@
 </ul><div class="clear"></div></div></nav></header>
 <div class="container"><main>
 <section><h2>Login — Demonstration</h2><p>Fill in the example form to test JavaScript validation. This is not a real account system.</p>
-<form action="#" method="post" onsubmit="return validateLogin()">
+<form action="#" method="post" onsubmit="return validateLogin()" novalidate>
 <fieldset><legend>Student Login</legend>
-<p><label for="login-email">Email:</label><input id="login-email" name="email" type="email" required></p>
-<p><label for="login-password">Password:</label><input id="login-password" name="password" type="password" required></p>
+<p><label for="login-email">Email:</label><input id="login-email" name="email" type="email"></p>
+<p><label for="login-password">Password:</label><input id="login-password" name="password" type="password"></p>
 <p><input type="submit" class="button" value="Login"> <input type="reset" value="Reset"></p>
 </fieldset></form><p class="feedback" id="login-message"></p>
 <p>New student? <a href="signup.html">Go to Sign Up</a>.</p>
